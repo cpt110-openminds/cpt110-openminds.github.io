@@ -1,6 +1,6 @@
 /*Global Styles*/
 
-html {
+html {    
     background: bottom center / cover no-repeat fixed url("../img/homepage-hero.jpg");
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
@@ -32,7 +32,20 @@ a:hover {
     font-weight: bold;
 }
 
+h1 {
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+.team-title {
+    background: linear-gradient(rgb(255, 207, 0),rgb(255, 221, 77));
+}
+
 /*Styles for header block*/
+
+.mission-text {
+
+}
 
 .main-title {
     font-family: 'Manjari', sans-serif;
@@ -102,10 +115,23 @@ main li {
 }
 
 .headshot {
-    border-radius: 50%;
     width: 25%;
     float: right;
     margin: 0 1em;
+}
+
+.headshot img {
+    border-radius: 50%;
+}
+
+.profile-link {
+    padding: 0.5em;
+    text-align: center;
+    width: auto;
+}
+
+.profile-link a {
+    font-weight: bold;
 }
 
 main div::after {
@@ -204,7 +230,7 @@ h1 {
 }
 
 .home-enter {
-    background: rgb(255, 207, 0);
+    
     width: auto;
     margin: 3em auto 0;
     padding: 1em;
@@ -212,14 +238,18 @@ h1 {
     transition: all 1s ease-out;
     font-weight: bold;
     font-size: 1.5em;
-    border-top: 1px solid rgb(255, 221, 77);
-    border-left: 1px solid rgb(255, 221, 77);
-    border-bottom: 1px solid rgb(205, 166, 0);
-    border-right: 1px solid rgb(205, 166, 0);
+
     opacity: 0;
     transition: all 1s ease;
 }
 
+.home-enter, .profile-link {
+    background: rgb(255, 207, 0);
+    border-top: 1px solid rgb(255, 221, 77);
+    border-left: 1px solid rgb(255, 221, 77);
+    border-bottom: 1px solid rgb(205, 166, 0);
+    border-right: 1px solid rgb(205, 166, 0);
+}
 .member-container {
     width: 600%;
     display: flex;
