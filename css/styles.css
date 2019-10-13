@@ -285,5 +285,9 @@ h1 {
     animation: none !important;
 }
 
+audio {
+    margin: 0 auto;
+}
+
 
 
