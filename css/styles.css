@@ -291,6 +291,7 @@ audio {
 
 .centre-video {
     margin: initial auto;
+    display: block;
 }
 
 
